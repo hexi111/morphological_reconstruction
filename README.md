@@ -26,6 +26,9 @@
 实验步骤
 
 make compile 编译并行的形态学重建系统
+
 make run 运行并行的形态学重建系统
+
 make compile1 编译单线程的形态学重建系统
+
 make run 运行单线程的形态学重建系统
