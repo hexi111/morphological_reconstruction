@@ -8,7 +8,7 @@
 	./make
 	不需要make install, 因为可以通过路径直接引用cmake
    
-2.	因为系统装了CUDA 9,所以只能安装opencv 3 或者opencv 4. 以前的opencv 2.4.5无法兼容CUDA 9。
+2. 因为系统装了CUDA 9,所以只能安装opencv 3 或者opencv 4. 以前的opencv 2.4.5无法兼容CUDA 9。
 	
 	在opencv源文件的目录里
 	mkdir build
@@ -17,18 +17,18 @@
 	make
 	make install
 
-3.	编译程序
+3. 编译程序
 
 	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/ytao3/opencv/lib64
 	nvcc -o imreconTest MorphologicReconGPU.cu -L"/home/ytao3/opencv/lib64" -I"/home/ytao3/opencv/include"  -lopencv_core -lopencv_imgcodecs -std=c++11
   
   
-实验步骤
+实验步骤:
 
-make compile 编译并行的形态学重建系统
+1. make compile 编译并行的形态学重建系统
 
-make run 运行并行的形态学重建系统
+2. make run 运行并行的形态学重建系统
 
-make compile1 编译单线程的形态学重建系统
+3. make compile1 编译单线程的形态学重建系统
 
-make run 运行单线程的形态学重建系统
+4. make run 运行单线程的形态学重建系统
